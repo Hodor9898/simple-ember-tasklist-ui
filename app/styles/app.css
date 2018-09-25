@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+html, body {
+  min-height: 100vh;
+  overflow: auto;
+  background: #f1f1f1;
+  margin: 0;
+  direction: rtl;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  outline: none;
+}
+
+.layout {
+  min-height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  max-height: 42px;
+  background: linear-gradient(to bottom, #ecd18b, #d2811d);
+  font-size: 24px;
+  padding: 5px 42px 8px 20px;
+}
+
+.header .btn-add {
+  float: left;
+}
+
+.btn.btn-primary {
+  background: linear-gradient(to bottom, #fffdf2, #a2b3af);
+  padding: 2px 4px;
+  border-radius: 5px;
+  justify-content: center;
+  display: flex;
+}
+
+.todo-list {
+  flex: 1;
+}
+
+.todo-list .todo-list-item {
+  padding: 12px 3px;
+  border-bottom: 1px solid #000;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.todo-list .todo-list-item:nth-child(odd) {
+  background: #f3f6e3;
+}
+
+.todo-list-item .check {
+  width: 24px;
+  height: 24px;
+  background: #f0f0f0;
+  border: 1px solid #8b8b8b;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+.todo-list-item .material-icons {
+  width: 16px;
+}
+
+.todo-list-item span {
+  flex: 1;
+}
+
+.todo-list-item.complete span {
+  color: #757572;
+  text-decoration: line-through;
+}
+
+.todo-list-item.complete .check {
+  background: #737373;
+  border-color: #8e9084;
+}
+
+.footer {
+  min-height: 20px;
+  background: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer > div {
+  text-align: center;
+  flex: 1
+}

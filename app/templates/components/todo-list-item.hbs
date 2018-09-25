@@ -1,0 +1,10 @@
+<div
+  class="todo-list-item d-flex flex-row {{if todo.complete "complete" "incomplete"}}">
+  <button class="check" {{action "toggle" todo}}></button>
+
+  <span>
+    {{todo.title}}
+  </span>
+
+  <i class="material-icons" {{action "destroy" todo}}>close</i>
+</div>
