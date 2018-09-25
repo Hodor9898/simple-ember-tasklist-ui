@@ -12,7 +12,7 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd fullstack-test`
+* `cd simple-ember-tasklist-ui`
 * `npm install`
 * `go to app/adapters/application.js and change the url to your own api url (cloned from https://github.com/Hodor9898/simple-ember-tasklist.git)`
 
