@@ -13,7 +13,9 @@ export default Component.extend({
         status: 'incomplete'
       });
 
-      todo.save();
+      todo.save().catch((err) => {
+        window.alert('אופס, יש איזה בעיה עם השרת')
+      })
     }
   }
 });

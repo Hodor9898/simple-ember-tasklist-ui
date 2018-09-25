@@ -7,10 +7,15 @@ export default Component.extend({
       let newStatus = todo.complete ? 'incomplete' : 'complete';
 
       todo.set('status', newStatus);
-      todo.save();
+      todo.save()
+        .catch((err) => {
+          window.alert('אופס, יש איזה בעיה עם השרת')
+        })
     },
     destroy(todo) {
-      todo.destroyRecord();
+      todo.destroyRecord().catch((err) => {
+        window.alert('אופס, יש איזה בעיה עם השרת')
+      })
     }
   }
 });
